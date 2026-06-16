@@ -1,0 +1,13 @@
+{
+  "name": "my-first-pipeline",
+  "version": "1.0.0",
+  "description": "A simple calculator app with CI/CD pipeline",
+  "main": "src/calculator.js ",
+  "scripts": {
+    "test": "node --test tests/*.test.js"
+  },
+  
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
