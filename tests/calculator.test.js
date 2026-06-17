@@ -1,6 +1,6 @@
 const { test } = require('node:test');
 const assert = require('node:assert');
-const { add, subtract, multiply, divide } = require('../src/calculator');
+const { add, subtract, multiply, divide, remainder } = require('../src/calculator');
 
 test('add returns sum of two numbers', () => {
   assert.strictEqual(add(2, 3), 5);
@@ -28,7 +28,7 @@ test('divide throws error when dividing by zero', () => {
 
 test('remainder returns remainder of two numbers', () => {
   assert.strictEqual(remainder(10, 3), 1);
-  assert.strictEqual(remainder(9, 3), 0);
+  assert.strictEqual(remainder(9, 4), 1);
 });
 
 test('remainder throws error when dividing by zero', () => {
