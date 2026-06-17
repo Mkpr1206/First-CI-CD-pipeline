@@ -25,3 +25,12 @@ test('divide returns quotient of two numbers', () => {
 test('divide throws error when dividing by zero', () => {
   assert.throws(() => divide(10, 0), { message: 'Cannot divide by zero' });
 });
+
+test('remainder returns remainder of two numbers', () => {
+  assert.strictEqual(remainder(10, 3), 1);
+  assert.strictEqual(remainder(9, 3), 0);
+});
+
+test('remainder throws error when dividing by zero', () => {
+  assert.throws(() => remainder(10, 0), { message: 'Cannot divide by zero' });
+});

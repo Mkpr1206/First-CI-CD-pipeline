@@ -25,7 +25,7 @@ function remainder(a, b) {
   if (b === 0) {
     throw new Error('Cannot divide by zero');
   }
-  return a + b;
+  return a % b;
 }
 
 // Export all four functions as a module
